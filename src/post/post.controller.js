@@ -54,3 +54,11 @@ export const deletePost = async (req, res) => {
         return res.status(500).send({ message: 'Error deleting post' })
     }
 }
+
+export const getPosts = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+}

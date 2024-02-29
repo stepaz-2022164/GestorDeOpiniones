@@ -58,23 +58,42 @@ export const update = async (req, res) => {
     try {
         let data = req.body
         let userId = req.params.id
+        let update = checkUpdate(data, userId)
+        if (!update) return res.status(400).send({ message: 'Can not update because missing data' })
+        let updatedUser = await User.findOneAndUpdate(
+            { _id: userId },
+            data,
+            { new: true }
+        )
+        if (!updatedUser) return res.status(401).send({ message: 'User not found and not updated' })
+        return res.send({ message: 'User updated succesfully', updatedUser })
+    } catch (error) {
+        console.error(error)
+        return res.status(500).send({ message: 'Error updating user' })
+    }
+}
+
+export const updatePassword = async (req, res) => {
+    try {
+        let data = req.body
+        let userId = req.params.id
         let user = await User.findOne({ _id: userId })
-        let password = req.params.password
+        let password = data.password
         if (user && await checkPassword(password, user.password)) {
-            if (data.password) data.password = await encrypt(data.password)
+            if (data.passwordNew) data.passwordNew = await encrypt(data.passwordNew)
             let update = checkUpdate(data, userId)
             if (!update) return res.status(400).send({ message: 'Can not update because missing data' })
             let updatedUser = await User.findOneAndUpdate(
                 { _id: userId },
-                data,
+                { password: data.passwordNew },
                 { new: true }
             )
             if (!updatedUser) return res.status(401).send({ message: 'User not found and not updated' })
-            return res.send({ message: 'User updated succesfully', updatedUser })
+            return res.send({ message: 'User password updated succesfully'})
         }
         return res.status(404).send({ message: 'Password is not correct' })
     } catch (error) {
         console.error(error)
-        return res.status(500).send({ message: 'Error updating user' })
+        return res.status(500).send({ message: 'Error updating password' })
     }
 }

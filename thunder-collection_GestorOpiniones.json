@@ -1,42 +1,42 @@
 {
     "client": "Thunder Client",
     "collectionName": "GestorOpiniones",
-    "dateExported": "2024-02-29T14:33:24.426Z",
+    "dateExported": "2024-02-29T23:07:05.693Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "6b5362d3-5194-407a-8978-6cbe87c02fbd",
+            "_id": "ec43ff7e-68d1-4846-8b86-15ecf2d13787",
             "name": "User",
             "containerId": "",
-            "created": "2024-02-28T05:26:36.516Z",
+            "created": "2024-02-29T18:52:47.635Z",
             "sortNum": 10000
         },
         {
-            "_id": "8cb753e2-bcb1-4876-9dff-be18fb8cc9cc",
+            "_id": "6087b632-8a7a-4dd5-93e9-fa3990e4fd37",
             "name": "Posts",
             "containerId": "",
-            "created": "2024-02-29T01:14:52.439Z",
+            "created": "2024-02-29T18:52:47.636Z",
             "sortNum": 20000
         },
         {
-            "_id": "e8872bcc-215b-4da6-9c27-5bc1795583af",
+            "_id": "7ae55a9e-e7ee-4fa0-ab85-fb2d01679a16",
             "name": "Comments",
             "containerId": "",
-            "created": "2024-02-29T04:54:39.332Z",
+            "created": "2024-02-29T18:52:47.637Z",
             "sortNum": 30000
         }
     ],
     "requests": [
         {
-            "_id": "59abeb7f-3b3d-452c-b201-13a1ac43c34c",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "6b5362d3-5194-407a-8978-6cbe87c02fbd",
+            "_id": "94825cac-b5de-4084-a470-87c639d8639a",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "ec43ff7e-68d1-4846-8b86-15ecf2d13787",
             "name": "register",
             "url": "/user/register",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-02-28T05:26:44.069Z",
-            "modified": "2024-02-29T02:47:23.539Z",
+            "created": "2024-02-29T18:52:47.635Z",
+            "modified": "2024-02-29T22:25:00.777Z",
             "headers": [],
             "params": [],
             "body": {
@@ -53,7 +53,7 @@
                     },
                     {
                         "name": "username",
-                        "value": "stepaz2"
+                        "value": "stepaz"
                     },
                     {
                         "name": "password",
@@ -72,15 +72,15 @@
             "tests": []
         },
         {
-            "_id": "2097df27-fc58-45e7-9c81-96155f36bcd7",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "6b5362d3-5194-407a-8978-6cbe87c02fbd",
+            "_id": "59709038-c29c-4c1a-b3df-f2ecb39d5560",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "ec43ff7e-68d1-4846-8b86-15ecf2d13787",
             "name": "login",
             "url": "/user/login",
             "method": "POST",
             "sortNum": 30000,
-            "created": "2024-02-28T05:38:01.853Z",
-            "modified": "2024-02-29T05:25:40.182Z",
+            "created": "2024-02-29T18:52:47.637Z",
+            "modified": "2024-02-29T22:46:43.748Z",
             "headers": [],
             "params": [],
             "body": {
@@ -89,35 +89,35 @@
                 "form": [
                     {
                         "name": "username",
-                        "value": "stepaz"
+                        "value": "stepaz",
+                        "isDisabled": true
                     },
                     {
                         "name": "password",
-                        "value": "12345"
+                        "value": "123"
                     },
                     {
                         "name": "email",
-                        "value": "stepaz@kinal.edu.gt",
-                        "isDisabled": true
+                        "value": "stepaz@kinal.edu.gt"
                     }
                 ]
             },
             "tests": []
         },
         {
-            "_id": "4ebfb02b-bbc8-48b8-b929-863d425d1d66",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "6b5362d3-5194-407a-8978-6cbe87c02fbd",
+            "_id": "8dba4c1f-36fe-4183-946e-41435d57d9da",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "ec43ff7e-68d1-4846-8b86-15ecf2d13787",
             "name": "update",
-            "url": "/user/update/65ded83896d8553805a32492/1234567",
+            "url": "/user/update/65e108ab40672c7b6b4882f9",
             "method": "PUT",
             "sortNum": 50000,
-            "created": "2024-02-28T06:31:56.866Z",
-            "modified": "2024-02-28T06:53:41.512Z",
+            "created": "2024-02-29T18:52:47.638Z",
+            "modified": "2024-02-29T22:44:36.243Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxMDMxNjYsImV4cCI6MTcwOTE4OTU2Nn0.hcvWFdSt7IdjAgywptYn7NVp1DPYKjSYlQSvYsXMtoA"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMDhhYjQwNjcyYzdiNmI0ODgyZjkiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkyNDY2NTUsImV4cCI6MTcwOTMzMzA1NX0.oRrriLSciP-uysQGcofC8BAQ9P2FJbg7z2ZboDlp0z4"
                 }
             ],
             "params": [],
@@ -127,30 +127,30 @@
                 "form": [
                     {
                         "name": "name",
-                        "value": "Sergio"
+                        "value": "Eduardo"
                     },
                     {
-                        "name": "password",
-                        "value": "12345"
+                        "name": "surname",
+                        "value": "Vela"
                     }
                 ]
             },
             "tests": []
         },
         {
-            "_id": "35cf2b94-58bc-4e13-8a9b-5703b199270e",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "8cb753e2-bcb1-4876-9dff-be18fb8cc9cc",
+            "_id": "605a9af9-d6e7-4e23-a7dd-e66517cfd1eb",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "6087b632-8a7a-4dd5-93e9-fa3990e4fd37",
             "name": "create post",
             "url": "/posts/createPost",
             "method": "POST",
             "sortNum": 60000,
-            "created": "2024-02-29T01:15:08.657Z",
-            "modified": "2024-02-29T01:19:12.554Z",
+            "created": "2024-02-29T18:52:47.639Z",
+            "modified": "2024-02-29T21:52:26.195Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxNjkzMjUsImV4cCI6MTcwOTI1NTcyNX0.l6Hy4_rZkRB8SBL5FvKf-avpXSM3WFPK7-ZkiurDvzI"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDRiMmQwN2NmODY0Zjc2Zjg4YzAiLCJ1c2VybmFtZSI6InN0ZXBhejIiLCJlbWFpbCI6InN0ZXBhekBraW5hbC5lZHUuZ3QiLCJuYW1lIjoiRWR1YXJkbyIsInN1cm5hbWUiOiJWZWxhIiwiaWF0IjoxNzA5MjQzNDY4LCJleHAiOjE3MDkzMjk4Njh9.Dt2WGKAg1iTsvi4rGE-i4-Zuf6rXzfK-GZP1BWByF7M"
                 }
             ],
             "params": [],
@@ -175,15 +175,15 @@
             "tests": []
         },
         {
-            "_id": "9d7a1b76-55af-48e5-a9cf-9fd6676321a8",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "8cb753e2-bcb1-4876-9dff-be18fb8cc9cc",
+            "_id": "e8143984-d7dc-42cc-9fd3-e293d49c991b",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "6087b632-8a7a-4dd5-93e9-fa3990e4fd37",
             "name": "edit post",
             "url": "/posts/editPost/65dfdbe4b2c4235bea11b7e4",
             "method": "PUT",
             "sortNum": 70000,
-            "created": "2024-02-29T02:33:35.327Z",
-            "modified": "2024-02-29T02:48:07.036Z",
+            "created": "2024-02-29T18:52:47.640Z",
+            "modified": "2024-02-29T18:52:47.640Z",
             "headers": [
                 {
                     "name": "token",
@@ -204,15 +204,15 @@
             "tests": []
         },
         {
-            "_id": "54bffb16-f078-454d-9b98-bb61960f0fde",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "8cb753e2-bcb1-4876-9dff-be18fb8cc9cc",
+            "_id": "864d980e-c44f-4d8c-a38e-f9385658a455",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "6087b632-8a7a-4dd5-93e9-fa3990e4fd37",
             "name": "delete post",
             "url": "/posts/deletePost/65dfdbe4b2c4235bea11b7e4",
             "method": "DELETE",
             "sortNum": 80000,
-            "created": "2024-02-29T04:04:24.282Z",
-            "modified": "2024-02-29T04:07:10.738Z",
+            "created": "2024-02-29T18:52:47.641Z",
+            "modified": "2024-02-29T18:52:47.641Z",
             "headers": [
                 {
                     "name": "token",
@@ -223,19 +223,19 @@
             "tests": []
         },
         {
-            "_id": "a691782c-ab05-4390-8b33-9e9e4d9f7c20",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "e8872bcc-215b-4da6-9c27-5bc1795583af",
+            "_id": "cd32935a-3997-4380-a0c8-883d14f56621",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "7ae55a9e-e7ee-4fa0-ab85-fb2d01679a16",
             "name": "create comment",
-            "url": "/comment/createComment/65e01349f7c9e19bd231f743",
+            "url": "/comment/createComment/65e0fc9a7fe3cc8f62dc8895",
             "method": "POST",
             "sortNum": 90000,
-            "created": "2024-02-29T04:54:50.629Z",
-            "modified": "2024-02-29T05:25:55.733Z",
+            "created": "2024-02-29T18:52:47.642Z",
+            "modified": "2024-02-29T21:54:08.480Z",
             "headers": [
                 {
                     "name": "token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxODQzNDAsImV4cCI6MTcwOTI3MDc0MH0.MhGtIrY5vTcymk0hpQM2wLgwhP2b-m_CmVYZqNICnWk"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZDRiMmQwN2NmODY0Zjc2Zjg4YzAiLCJ1c2VybmFtZSI6InN0ZXBhejIiLCJlbWFpbCI6InN0ZXBhekBraW5hbC5lZHUuZ3QiLCJuYW1lIjoiRWR1YXJkbyIsInN1cm5hbWUiOiJWZWxhIiwiaWF0IjoxNzA5MjQzNDY4LCJleHAiOjE3MDkzMjk4Njh9.Dt2WGKAg1iTsvi4rGE-i4-Zuf6rXzfK-GZP1BWByF7M"
                 }
             ],
             "params": [],
@@ -252,15 +252,15 @@
             "tests": []
         },
         {
-            "_id": "b38da3b3-ca78-4ee4-b2c9-ea49eccb0089",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "e8872bcc-215b-4da6-9c27-5bc1795583af",
+            "_id": "98d7f364-eb19-45f4-b194-5412d39e5e82",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "7ae55a9e-e7ee-4fa0-ab85-fb2d01679a16",
             "name": "edit comment",
             "url": "/comment/editComment/65e015632facc508dfe86321",
             "method": "PUT",
             "sortNum": 100000,
-            "created": "2024-02-29T05:37:14.043Z",
-            "modified": "2024-02-29T05:53:34.213Z",
+            "created": "2024-02-29T18:52:47.643Z",
+            "modified": "2024-02-29T18:52:47.643Z",
             "headers": [
                 {
                     "name": "token",
@@ -281,15 +281,15 @@
             "tests": []
         },
         {
-            "_id": "577ce41f-b9dd-48c8-9a43-60dacf3b0dc0",
-            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
-            "containerId": "e8872bcc-215b-4da6-9c27-5bc1795583af",
+            "_id": "0ab4a82c-45ac-45bc-aec0-8439fdec1ba6",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "7ae55a9e-e7ee-4fa0-ab85-fb2d01679a16",
             "name": "delete comment",
             "url": "/comment/deleteComment/65e0135df7c9e19bd231f749",
             "method": "DELETE",
             "sortNum": 110000,
-            "created": "2024-02-29T06:03:20.080Z",
-            "modified": "2024-02-29T06:06:36.293Z",
+            "created": "2024-02-29T18:52:47.644Z",
+            "modified": "2024-02-29T18:52:47.644Z",
             "headers": [
                 {
                     "name": "token",
@@ -297,6 +297,39 @@
                 }
             ],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9b2443ab-d185-4820-bc90-5bf2c17ee1bf",
+            "colId": "77783b64-cba8-4472-8ad6-bdfd4b64ef10",
+            "containerId": "ec43ff7e-68d1-4846-8b86-15ecf2d13787",
+            "name": "updatePassword",
+            "url": "/user/updatePassword/65e108ab40672c7b6b4882f9",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-02-29T22:41:47.629Z",
+            "modified": "2024-02-29T22:46:55.359Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMDhhYjQwNjcyYzdiNmI0ODgyZjkiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkyNDY2NTUsImV4cCI6MTcwOTMzMzA1NX0.oRrriLSciP-uysQGcofC8BAQ9P2FJbg7z2ZboDlp0z4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "password",
+                        "value": "123"
+                    },
+                    {
+                        "name": "passwordNew",
+                        "value": "12345"
+                    }
+                ]
+            },
             "tests": []
         }
     ],
