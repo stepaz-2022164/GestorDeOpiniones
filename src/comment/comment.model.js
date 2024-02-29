@@ -1,3 +1,5 @@
+'use strict'
+
 import {Schema, model} from 'mongoose'
 
 const commentSchema = Schema({
@@ -6,7 +8,7 @@ const commentSchema = Schema({
         ref: 'user',
         required: true
     },
-    comment: {
+    text: {
         type: String,
         required: true
     }
