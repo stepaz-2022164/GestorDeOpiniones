@@ -1,0 +1,308 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorOpiniones",
+    "dateExported": "2024-02-29T14:33:24.426Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "6b5362d3-5194-407a-8978-6cbe87c02fbd",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-02-28T05:26:36.516Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "8cb753e2-bcb1-4876-9dff-be18fb8cc9cc",
+            "name": "Posts",
+            "containerId": "",
+            "created": "2024-02-29T01:14:52.439Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e8872bcc-215b-4da6-9c27-5bc1795583af",
+            "name": "Comments",
+            "containerId": "",
+            "created": "2024-02-29T04:54:39.332Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "59abeb7f-3b3d-452c-b201-13a1ac43c34c",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "6b5362d3-5194-407a-8978-6cbe87c02fbd",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-28T05:26:44.069Z",
+            "modified": "2024-02-29T02:47:23.539Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Sergio"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Tepaz"
+                    },
+                    {
+                        "name": "username",
+                        "value": "stepaz2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    },
+                    {
+                        "name": "email",
+                        "value": "stepaz@kinal.edu.gt"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "87654321"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2097df27-fc58-45e7-9c81-96155f36bcd7",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "6b5362d3-5194-407a-8978-6cbe87c02fbd",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-28T05:38:01.853Z",
+            "modified": "2024-02-29T05:25:40.182Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "stepaz"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    },
+                    {
+                        "name": "email",
+                        "value": "stepaz@kinal.edu.gt",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4ebfb02b-bbc8-48b8-b929-863d425d1d66",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "6b5362d3-5194-407a-8978-6cbe87c02fbd",
+            "name": "update",
+            "url": "/user/update/65ded83896d8553805a32492/1234567",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-28T06:31:56.866Z",
+            "modified": "2024-02-28T06:53:41.512Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxMDMxNjYsImV4cCI6MTcwOTE4OTU2Nn0.hcvWFdSt7IdjAgywptYn7NVp1DPYKjSYlQSvYsXMtoA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Sergio"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "35cf2b94-58bc-4e13-8a9b-5703b199270e",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "8cb753e2-bcb1-4876-9dff-be18fb8cc9cc",
+            "name": "create post",
+            "url": "/posts/createPost",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-29T01:15:08.657Z",
+            "modified": "2024-02-29T01:19:12.554Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxNjkzMjUsImV4cCI6MTcwOTI1NTcyNX0.l6Hy4_rZkRB8SBL5FvKf-avpXSM3WFPK7-ZkiurDvzI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Centro Educativo Tecnico Laboral Kinal"
+                    },
+                    {
+                        "name": "category",
+                        "value": "critic"
+                    },
+                    {
+                        "name": "text",
+                        "value": "El centro educativo tecnico laboral kinal es uno de los mejors colegios de Guatemala"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d7a1b76-55af-48e5-a9cf-9fd6676321a8",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "8cb753e2-bcb1-4876-9dff-be18fb8cc9cc",
+            "name": "edit post",
+            "url": "/posts/editPost/65dfdbe4b2c4235bea11b7e4",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-29T02:33:35.327Z",
+            "modified": "2024-02-29T02:48:07.036Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxNzQ4NzcsImV4cCI6MTcwOTI2MTI3N30._8uZd5DXqXYCPdT22ju4rHGTTDAyknup_8yd57sWbtc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Kinal2"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "54bffb16-f078-454d-9b98-bb61960f0fde",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "8cb753e2-bcb1-4876-9dff-be18fb8cc9cc",
+            "name": "delete post",
+            "url": "/posts/deletePost/65dfdbe4b2c4235bea11b7e4",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-02-29T04:04:24.282Z",
+            "modified": "2024-02-29T04:07:10.738Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxNzk2MjAsImV4cCI6MTcwOTI2NjAyMH0.Xm9vQOlRA6sgIH3B4CUWBcZQa6PZd8wfdN8mQ-WJbNE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a691782c-ab05-4390-8b33-9e9e4d9f7c20",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "e8872bcc-215b-4da6-9c27-5bc1795583af",
+            "name": "create comment",
+            "url": "/comment/createComment/65e01349f7c9e19bd231f743",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-02-29T04:54:50.629Z",
+            "modified": "2024-02-29T05:25:55.733Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxODQzNDAsImV4cCI6MTcwOTI3MDc0MH0.MhGtIrY5vTcymk0hpQM2wLgwhP2b-m_CmVYZqNICnWk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "No estoy de acuerdo"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b38da3b3-ca78-4ee4-b2c9-ea49eccb0089",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "e8872bcc-215b-4da6-9c27-5bc1795583af",
+            "name": "edit comment",
+            "url": "/comment/editComment/65e015632facc508dfe86321",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-02-29T05:37:14.043Z",
+            "modified": "2024-02-29T05:53:34.213Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxODQzNDAsImV4cCI6MTcwOTI3MDc0MH0.MhGtIrY5vTcymk0hpQM2wLgwhP2b-m_CmVYZqNICnWk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Estoy de acuerdo pero con dudas xd"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "577ce41f-b9dd-48c8-9a43-60dacf3b0dc0",
+            "colId": "439305b7-e0ba-4dee-b6c5-1b92788054f0",
+            "containerId": "e8872bcc-215b-4da6-9c27-5bc1795583af",
+            "name": "delete comment",
+            "url": "/comment/deleteComment/65e0135df7c9e19bd231f749",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-02-29T06:03:20.080Z",
+            "modified": "2024-02-29T06:06:36.293Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDgzODk2ZDg1NTM4MDVhMzI0OTIiLCJ1c2VybmFtZSI6InN0ZXBheiIsImVtYWlsIjoic3RlcGF6QGtpbmFsLmVkdS5ndCIsIm5hbWUiOiJTZXJnaW8iLCJzdXJuYW1lIjoiVGVwYXoiLCJpYXQiOjE3MDkxODQzNDAsImV4cCI6MTcwOTI3MDc0MH0.MhGtIrY5vTcymk0hpQM2wLgwhP2b-m_CmVYZqNICnWk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3200"
+        }
+    }
+}
