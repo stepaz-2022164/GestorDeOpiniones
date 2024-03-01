@@ -57,8 +57,13 @@ export const deletePost = async (req, res) => {
 
 export const getPosts = async (req, res) => {
     try {
-        
+        let posts = await Post.find().populate({
+            path: 'comments',
+            select: 'text'
+        })
+        return res.send({posts})
     } catch (error) {
-        
+        console.error(error)
+        return res.status(500).send({message: 'Error getting posts'})
     }
 }

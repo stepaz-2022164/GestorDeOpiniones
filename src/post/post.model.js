@@ -8,8 +8,9 @@ const postSchema = Schema({
         required: true
     },
     category: {
-        type: String,
-        required: true
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'category'
     },
     text: {
         type: String,
