@@ -42,10 +42,6 @@ export const editComment = async (req, res) => {
             {new: true}
         )
         if (!updateComment) return res.status(404).send({message: 'Comment not found and not updated'})
-        if (updateComment) {
-            post.comments.push(commentId)
-            await post.save()
-        }
         return res.send({message: 'Comment updated successfully', updateComment})
     } catch (error) {
         console.error(error)
@@ -71,5 +67,15 @@ export const deleteComment = async (req, res) => {
     } catch (error) {
         console.error(error)
         return res.status(500).send({message: 'Error deleting comment'})
+    }
+}
+
+export const getComments = async (req, res) => {
+    try {
+        let comments = await Comment.find()
+        return res.send({comments})
+    } catch (error) {
+        console.error(error)
+        return res.status(500).send({message: 'Error getting comments'})
     }
 }
