@@ -14,4 +14,4 @@ export const connect = async() => {
     } catch (error) {
         console.error({message: 'Database connection error', error})
     }
-}
+} 

@@ -57,11 +57,13 @@ export const login = async (req, res) => {
 export const update = async (req, res) => {
     try {
         let data = req.body
-        let userId = req.params.id
-        let update = checkUpdate(data, userId)
+        let userIdU = req.params.id
+        let userIdL = req.user._id
+        if (userIdL.toString() !== userIdU.toString()) return res.status(404).send({ message: 'You only can update your user'})
+        let update = checkUpdate(data, userIdU)
         if (!update) return res.status(400).send({ message: 'Can not update because missing data' })
         let updatedUser = await User.findOneAndUpdate(
-            { _id: userId },
+            { _id: userIdU },
             data,
             { new: true }
         )
@@ -76,15 +78,17 @@ export const update = async (req, res) => {
 export const updatePassword = async (req, res) => {
     try {
         let data = req.body
-        let userId = req.params.id
-        let user = await User.findOne({ _id: userId })
+        let userIdU = req.params.id
+        let userIdL = req.user._id
+        let user = await User.findOne({ _id: userIdU })
         let password = data.password
+        if (userIdL.toString() !== userIdU.toString()) return res.status(404).send({ message: 'You only can update your user'})
         if (user && await checkPassword(password, user.password)) {
             if (data.passwordNew) data.passwordNew = await encrypt(data.passwordNew)
-            let update = checkUpdate(data, userId)
+            let update = checkUpdate(data, userIdU)
             if (!update) return res.status(400).send({ message: 'Can not update because missing data' })
             let updatedUser = await User.findOneAndUpdate(
-                { _id: userId },
+                { _id: userIdU },
                 { password: data.passwordNew },
                 { new: true }
             )
